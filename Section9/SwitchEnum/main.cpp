@@ -1,0 +1,39 @@
+#include <iostream>
+
+// Switch with enumeration
+
+using namespace std;
+
+int main()
+{
+    cout << "Hello world!" << endl;
+
+    enum Direction {
+        left, right, up, down
+    };
+
+    Direction heading {left};
+
+    switch(heading){
+        case left:
+            cout << "Going left" << endl;
+            break;
+
+        case right:
+            cout << "Going right" << endl;
+            break;
+
+        case up:
+            cout << "Going up" << endl;
+            break;
+
+        case down:
+            cout << "Going down" << endl;
+            break;
+        default:
+            cout << "Default case" << endl;
+
+    }
+
+    return 0;
+}
